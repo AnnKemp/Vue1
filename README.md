@@ -1,4 +1,4 @@
-# vue1
+# vue1 (with typescript now)
 
 ## Project setup
 ```
