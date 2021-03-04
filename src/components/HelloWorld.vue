@@ -109,6 +109,8 @@ export default defineComponent({
   name: "HelloWorld",
   props: {
     msg: String
+    // for tutorial check Adam's real world vue 3 typescript course.
+    // code see: github.com/code-pop/Real-World-Vue-3-TypeScript
   }
 });
 </script>
