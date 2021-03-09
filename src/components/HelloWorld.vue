@@ -111,6 +111,16 @@ export default defineComponent({
     msg: String
     // for tutorial check Adam's real world vue 3 typescript course.
     // code see: github.com/code-pop/Real-World-Vue-3-TypeScript
+
+// some new types
+//tuple type = fixed array with predefined data types
+//Enum type = allows you to define friendly names to a set of values vb: enum ArrowKeys{
+//  Up, Down, Left, Right}
+
+// let shoppingList:string[]=['apple', 'bananas', 'peers']; // how to define type for an array, the string is the type that's in the array
+
+// adding type to a function: let generateFullName=(firstName: string, lastName: string): string=> {
+ // return firstName + ' ' + lastName} //  de typering achter het dubbelpunt na de gebogen haakjes dient om het type van het resultaat van de functie te bepalen
   }
 });
 </script>
