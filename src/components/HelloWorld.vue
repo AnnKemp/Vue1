@@ -111,18 +111,24 @@ export default defineComponent({
     msg: String
     // for tutorial check Adam's real world vue 3 typescript course.
     // code see: github.com/code-pop/Real-World-Vue-3-TypeScript
-
+ }
+});
 // some new types
 //tuple type = fixed array with predefined data types
 //Enum type = allows you to define friendly names to a set of values vb: enum ArrowKeys{
 //  Up, Down, Left, Right}
 
 // let shoppingList:string[]=['apple', 'bananas', 'peers']; // how to define type for an array, the string is the type that's in the array
-
+// How to apply type to an object // let person: { name:string; age: number;}={name:'Peter Parker, age:20}
+// beter is het echter om met een interface te werken, vb: interface Hero={ name: string; age: number; activeAdvenger: boolean; powers: string[];} let person: Hero={name: 'Peter Parker', age: 20, activeAdvenger: true, powers: ['wall-crawl', 'spider-sense']}
 // adding type to a function: let generateFullName=(firstName: string, lastName: string): string=> {
  // return firstName + ' ' + lastName} //  de typering achter het dubbelpunt na de gebogen haakjes dient om het type van het resultaat van de functie te bepalen
-  }
-});
+ // Defining custom types: type buttonType='primary' | 'secondary' | 'succes' | 'danger' // de rechte streep is een Union Operator en betekent 'of' in Typescript   let buttonStyles: buttonType='primary' // dus hier maak je zelf je op maak gemaakte typeringen
+
+// for advanced typescript in Vue install extension: 'vuedx' in Visual Studio Code
+// const futureTodoItem = {} as TodoItem // with the 'as' we override typescript and can add content to an empty constante
+// futureTodoItem.label='Install VueDX extension'
+// futureTodoItem.completed= true
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
